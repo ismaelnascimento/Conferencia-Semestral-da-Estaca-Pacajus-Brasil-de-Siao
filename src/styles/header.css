@@ -1,0 +1,118 @@
+/*  
+
+CSS / header
+
+*/
+
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-header > p {
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.app-header__elder {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.app-header__elder > div {
+  width: 180px;
+  height: 180px;
+  max-width: 180px;
+  max-height: 180px;
+  min-width: 180px;
+  min-height: 180px;
+  background: rgba(255, 255, 255, 0.11);
+  box-shadow: 0 0 40px 8px rgba(58, 57, 57, 0.295);
+  border: 2px solid rgb(23, 92, 240);
+  border-radius: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-header__elder > div > img {
+  width: 80px;
+  height: 80px;
+}
+
+.app-header__elder > div > p {
+  font-weight: 300;
+  font-size: 140px;
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  backdrop-filter: blur(10px);
+  background: rgba(46, 48, 51, 0.226);
+}
+
+.app-header__elder > section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.app-header__elder > section > p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.app-header__elder > section > h5 {
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(220, 222, 226);
+}
+
+/*
+
+---------- RESPONSIVE ---------- 
+
+*/
+
+@media (max-width: 920px) {
+  .app-header > p {
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  .app-header__elder > div {
+    width: 120px;
+    height: 120px;
+    max-width: 120px;
+    max-height: 120px;
+    min-width: 120px;
+    min-height: 120px;
+  }
+  .app-header__elder > div > img {
+    width: 60px;
+    height: 60px;
+  }
+  .app-header__elder > div > p {
+    font-size: 110px;
+  }
+}
+
+@media (max-width: 550px) { 
+  .app-header > p {
+    font-size: 16px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}

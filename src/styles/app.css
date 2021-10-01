@@ -1,0 +1,70 @@
+/*  
+
+CSS / app
+
+*/
+
+.app {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.app-image_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.app-content {
+  overflow: auto;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.315);
+  height: 100%;
+  backdrop-filter: blur(1px);
+  z-index: 999;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.app-footer {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-footer > a {
+  margin: 0 6px;
+}
+
+.app-footer > svg {
+  font-size: 20px;
+  margin-top: -1px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.app-footer > svg:hover {
+  opacity: 0.6;
+}
+
+/*
+
+---------- RESPONSIVE ---------- 
+
+*/
