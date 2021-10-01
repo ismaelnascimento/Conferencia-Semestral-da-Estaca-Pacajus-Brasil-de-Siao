@@ -34,7 +34,7 @@ function index() {
             Ismael Nascimento
           </a>{" "}
           <SiGithub
-            onClick={() => window.open("https://github.com/ismaelnascimento")}
+            onClick={() => window.open("https://github.com/ismaelnascimento/Conferencia-Semestral-da-Estaca-Pacajus-Brasil-de-Siao")}
           />
         </div>
       </div>
